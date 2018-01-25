@@ -1,0 +1,4 @@
+一、url-loader
+1.什么场景下使用？
+	url-loader类似于file-loader，但是在文件大小(单位byte)低于指定的限制时，可以将对未设置或者小于limit设置的图片进行转换，
+返回一个dataURL。

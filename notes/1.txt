@@ -1,0 +1,17 @@
+管理资源
+1.webpack除了JavaScript，还可以通过loader引入任何其他类型的文件。
+2.file-loader和url-loader可以接受并加载任何文件，然后将其输出到构建目录。
+
+一、url-loader
+1.什么场景下使用？
+	url-loader类似于file-loader，但是在文件大小(单位byte)低于指定的限制时，可以将对未设置或者小于limit设置的图片进行转换，返回一个dataURL，以base64的格式被img的src所使用的。
+
+2、配置参数
+                类型       默认值                含义
+    1)limit —— number —— undefined —— 转换为dataURL内联使用的文件带下阈值
+    2)mymetype —— string —— 文件扩展名 —— 文件的mymetype类型，默认使用文件扩展类型
+    3)fallback —— string —— file-loader —— 在文件大于limit时，交于处理的加载器
+
+二、html-webpack-plugin
+1、默认生成index.html，并将所有的bundle自动添加到其中。
+2、
